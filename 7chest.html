@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS #1</title>
+    <link rel="stylesheet" href="style7.css" />
+  </head>
+
+  <body>
+    <audio autoplay>
+      <source src="sounds/wethands.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <!-- Notice how each div has an 'onclick' attribute which links to a function in the JS file -->
+    <div class="top">
+      <div class="long"></div>
+      <div class="short clickable" onclick="endBoat()"></div>
+    </div>
+    <div class="bottom">
+      <img
+        src="images/chests/emptyslot.png"
+        class="emptyslot1 clickable none"
+        id="empty1"
+        onclick="putInventory()"
+      />
+      <img
+        src="images/chests/emptyslot.png"
+        class="emptyslot2 clickable none"
+        id="empty2"
+        onclick="emeraldThree(); getEmeralds()"
+      />
+      <img
+        src="images/chests/emptyslot.png"
+        class="emptyslot3 clickable none"
+        id="empty3"
+        onclick="changeInventory()"
+      />
+      <img
+        src="images/chests/emptyslot.png"
+        class="emptyslot4 clickable none"
+        id="empty4"
+        onclick="seedOne(); getSeeds()"
+      />
+      <img
+        src="images/chests/emptyslot.png"
+        class="emptyslot5 clickable none"
+        id="empty5"
+        onclick="seedTwo(); getSeeds()"
+      />
+      <img
+        src="images/chests/emptyslot.png"
+        class="emptyslot6 clickable none"
+        id="empty6"
+        onclick="switchInventory()"
+      />
+      <img
+        src="images/chests/emptyslot.png"
+        class="emptyslot7 clickable none"
+        id="empty7"
+        onclick="emeraldFour(); getEmeralds()"
+      />
+      <img
+        src="images/chests/emptyslot.png"
+        class="emptyslot8 clickable none"
+        id="empty8"
+        onclick="addInventory()"
+      />
+
+      <img src="images/chests/shovel.jpg" class="shovel none" id="shovel" />
+      <img
+        src="images/chests/emerald3.jpg"
+        class="emerald none"
+        id="emerald3"
+      />
+      <img src="images/chests/boots.jpg" class="boots none" id="boots" />
+      <img src="images/chests/seeds2.jpg" class="seeds none" id="seed2" />
+      <img src="images/chests/seeds4.jpg" class="seeds none" id="seed4" />
+      <img src="images/chests/plate.jpg" class="plate none" id="plate" />
+      <img
+        src="images/chests/emerald4.jpg"
+        class="emerald none"
+        id="emerald4"
+      />
+      <img src="images/chests/pants.jpg" class="pants none" id="pants" />
+      <img
+        src="images/chests/emerald7.jpg"
+        class="emerald none"
+        id="emerald7"
+      />
+    </div>
+    <audio
+      src="sounds/teleport.mp3"
+      type="audio/mp3"
+      id="teleportsound"
+    ></audio>
+    <audio
+      src="sounds/itemframe.mp3"
+      type="audio/mp3"
+      id="itemframesound"
+    ></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

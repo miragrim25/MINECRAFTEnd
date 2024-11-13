@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS #1</title>
+    <link rel="stylesheet" href="style5.css" />
+  </head>
+
+  <body>
+    <audio autoplay>
+      <source src="sounds/wethands.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <!-- Notice how each div has an 'onclick' attribute which links to a function in the JS file -->
+    <div class="column2">
+      <div class="half center-content">
+        <img
+          id="gateway"
+          src="images/endgateway.png"
+          onclick="goBack()"
+          class="clickable"
+        />
+      </div>
+      <div class="half"></div>
+    </div>
+    <div class="box2">
+      <div class="half">
+        <div class="half2 clickable" onclick="endBoat()"></div>
+        <div class="half2"></div>
+      </div>
+      <div class="half"></div>
+    </div>
+    <div class="column2">
+      <div class="half"></div>
+      <div class="half center-content">
+        <img
+          id="chorusblock"
+          src="images/chorusblock.png"
+          onCLick="changeTiny()"
+          class="clickable"
+        />
+        <img class="none" id="chorus" src="images/dropped.png" />
+      </div>
+      <!--ummm and more fruit to make it look good-->
+      <img class="none" id="chorus" src="images/chorusfruit.png" />
+    </div>
+    <script src="script.js"></script>
+    <audio src="sounds/chorus.mp3" type="audio/mp3" id="chorussound"></audio>
+    <audio
+      src="sounds/teleport.mp3"
+      type="audio/mp3"
+      id="teleportsound"
+    ></audio>
+  </body>
+</html>
